@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task2</title>
+</head>
+<body>
+  <button id="btnClick">Change Color</button>
+  <script>
+   const btn = document.getElementById('btnClick');
+
+   //Create array to store the list of colors
+   const colors =  ['blue', 'green', 'yellow', 'orange'];
+
+   //apply event to the btutton
+   btn.addEventListener('click', function(){
+
+    // get the total number of array
+    let totalColor = colors.length
+
+    //Randomly generate random number
+    let randomNumber = Math.floor(Math.random() * totalColor);
+
+    //get the correspaonding generator ciolor
+    let randomGenerator = colors[randomNumber]
+
+    //set the color 
+
+    document.body.style.backgroundColor = randomGenerator
+   });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  button{
+   padding: 0.5rem 1rem;
+   margin-top:  23%;
+  }
+
+</style>
+<body>
+  <button id="btnclick">Change Color</button>
+
+  <script>
+    const btnClick = document.getElementById('btnclick');
+    btnClick.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'rgb(255,45,255)';
+    })
+
+    btnClick.addEventListener('dblclick', function(){
+    document.body.style.backgroundColor = 'rgb(134,255,67)';
+    });
+
+
+    let colors = ["blue", "green", "yellow", "orange", ];
+    console.log(colors.length);
+  </script>
+
+
+  <!-- Randomly change the backgroundColor -->
+  maths.random
+</body>
+</html>

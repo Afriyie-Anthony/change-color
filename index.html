@@ -1,0 +1,54 @@
+<!-- javascript DOM -->
+<!-- javascript is a single threaded programming language -->
+<!-- Html is a static programming language -->
+
+<!-- Making website interactive with Event Handling -->
+
+<!-- Event in javascript means  -->
+
+<!-- facebook events -->
+
+<!-- keyboard Event{
+  keyup,
+  keydown,
+  keypress
+}
+mouse Event{
+  single click (context menu)
+  double click
+}
+touch Event
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btnClick" ondblclick="alert('I am Here')">Click Me</button>
+  <button id="btn1Click">Click me</button>
+
+  <!-- 1. Acces the Tag or Element
+  2. Apply The Event 
+  all event in javascript inline starts wuith on
+
+  ondblclick is used for the double click event
+-->
+<script>
+  // Accessing the tag/Elemet
+  const btn1click = document.getElementById('btn1Click');
+  // apply event to the button
+  btn1click.addEventListener('click', function (){
+    alert('I am Here how can i help you');
+  }) 
+  // for the addEventListener two things are being registered here 
+  // add an unknown function to it and add the performance you want it to do for you 
+
+  function ab (){
+    alert('I am Here how can i help you title me');
+  }
+</script>
+</body>
+</html>

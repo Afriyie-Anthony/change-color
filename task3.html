@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btnclick">
+    Change Color
+  </button>
+
+  <script>
+    const btn = document.getElementById("btnclick");
+
+    const colors = ['A', 'B', 'C', 'D', 'E', 'F', '0', 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    btn.addEventListener("click",function (){
+
+      let totalcolors = colors.length
+      let generatedcolors = "#"
+      for(let i = 0; i < 6; i++) {
+
+        let randomNumber = Math.floor(Math.random() * totalcolors);
+
+        let singleColor = colors[randomNumber]
+
+        generatedcolors = generatedcolors + singleColor
+      }
+      document.body.style.backgroundColor = generatedcolors
+    })
+
+  </script>
+</body>
+</html>
