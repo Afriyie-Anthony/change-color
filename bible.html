@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .container{
+      background-color: bisque;
+      width: 500px;
+      padding: 3rem;
+      border-radius: 10px;
+      h1{
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      input{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        padding: 0 1rem;
+
+        &:focus{
+         outline: none;
+        }
+      }
+
+      .preview{
+        padding: 1rem 0;
+        line-height: 40px;
+        #reference{
+          padding: 10px 0;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personal  Bible</h1>
+    <input type="text" id="txtVerse"><br>
+    <button id="class">Search</button>
+    <div class="preview">
+      <span id="reference"></span><br>
+      <span id="preview"></span>
+    </div>
+  </div>
+
+  <script src="bible.js"></script>
+</body>
+</html>
