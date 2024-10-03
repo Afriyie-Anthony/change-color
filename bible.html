@@ -6,11 +6,15 @@
   <title>Document</title>
 
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
     body{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 90vh;
+      height: 100vh;
       background-image: url(./jesus-god-holy-spirit-bible.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -70,8 +74,8 @@
         height: 200px;
 
         &::-webkit-scrollbar{
-          background-color: black ;
-          width: 1px;
+          background-color: #fff ;
+          width: 0.2px;
           height: 0;
         }
         &::-webkit-scrollbar-corner{
@@ -82,6 +86,76 @@
           padding: 10px 0;
         }
       }
+    }
+
+    @media  (max-width: 400px) {
+      body{
+        height: 100vh;
+        display: flex;
+        align-items: none;
+        justify-content: none;
+        
+      }
+
+      .container{
+        width: 270px;
+
+        input{
+          width: 230px;
+        }
+      }
+
+    }
+
+    @media  (min-width: 401px) {
+      body{
+        height: 100vh;
+        display: flex;
+      }
+
+      .container{
+        width: 300px;
+
+        input{
+          width: 280px;
+        }
+      }
+
+    }
+
+    @media  (min-width: 750px) {
+      body{
+        height: 100vh;
+        display: flex;
+      }
+
+      .container{
+        width: 390px;
+
+        input{
+          width: 345px;
+        }
+      }
+
+    }
+
+    @media  (min-width: 900px) {
+      body{
+        height: 100vh;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      }
+
+      .container{
+        width: 500px;
+
+        input{
+          width: 500px;
+        }
+      }
+
     }
   </style>
 </head>
